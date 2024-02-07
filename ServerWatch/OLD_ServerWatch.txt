@@ -1,0 +1,31 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+;SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+SetTitleMatchMode 2
+
+Loop {
+    ;WinGet, vanilla,list, 7777
+
+    ;if (vanilla = 0) {
+        ;run "C:\Minecraft Server\LeServeurQuiTousse\RunServer.bat", C:\Minecraft Server\LeServeurQuiTousse\
+        ;msgbox, 7777 is not running
+    ;}
+
+    ;WinGet, dawncraft,list, 7778
+
+    ;if (dawncraft = 0) {
+    ;    run "C:\Minecraft Server\DawnCraft_1.19\run.bat", C:\Minecraft Server\DawnCraft_1.19\
+    ;    ;msgbox, 7778 is not running
+    ;}
+
+    WinGet, palworld, list, PalServer
+
+    ;if (palworld = 0) {
+    ;    run "C:\Program Files (x86)\Steam\steamapps\common\PalServer.exe", C:\Program Files (x86)\Steam\steamapps\common\
+         msgbox, 7778 is not running
+    ;}
+
+    sleep, 1000 * 30
+}
